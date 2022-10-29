@@ -4,11 +4,226 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <title>JavaScript | Webpack </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/output.css">
+  <title>Tailwind | Webpack </title>
 </head>
 
-<body>
+<body class="bg-blacklight">
+  <!-- Header -->
+  <div class="relative overflow-hidden">
+    <div class="relative pt-6 pb-16 sm:pb-24">
+      <div>
+        <div class="mx-auto max-w-7xl px-4 sm:px-6">
+          <nav class="relative flex items-center justify-between sm:h-10 md:justify-center" aria-label="Global">
+            <div class="flex flex-1 items-center md:absolute md:inset-y-0 md:left-0">
+              <div class="flex w-full items-center justify-between md:w-auto">
+                <a href="#">
+                  <span class="sr-only">Your Company</span>
+                  <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+                </a>
+                <div class="-mr-2 flex items-center md:hidden">
+                  <button type="button" class="inline-flex items-center justify-center rounded-md bg-gray-50 p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <!-- Heroicon name: outline/bars-3 -->
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="hidden md:flex md:space-x-10">
+              <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Product</a>
+              <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Features</a>
+              <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Marketplace</a>
+              <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Company</a>
+            </div>
+            <div class="hidden md:absolute md:inset-y-0 md:right-0 md:flex md:items-center md:justify-end">
+              <span class="inline-flex rounded-md shadow">
+                <a href="#" class="inline-flex items-center rounded-md border border-transparent bg-white px-4 py-2 text-base font-medium text-indigo-600 hover:bg-gray-50">Log in</a>
+              </span>
+            </div>
+          </nav>
+        </div>
+        <div class="absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition md:hidden">
+          <div class="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
+            <div class="flex items-center justify-between px-5 pt-4">
+              <div>
+                <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+              </div>
+              <div class="-mr-2">
+                <button type="button" class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                  <span class="sr-only">Close menu</span>
+                  <!-- Heroicon name: outline/x-mark -->
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="px-2 pt-2 pb-3">
+              <a href="#skills" class="block rounded-md px-3 py-2 text-base font-medium text-plightBlack hover:bg-gray-50 hover:text-gray-900">Skills</a>
+              <a href="#parteners" class="block rounded-md px-3 py-2 text-base font-medium text-plightBlack hover:bg-gray-50 hover:text-gray-900">Parteners</a>
+              <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-plightBlack hover:bg-gray-50 hover:text-gray-900">Realisations</a>
+              <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-plightBlack hover:bg-gray-50 hover:text-gray-900">Contact Me</a>
+            </div>
+            <a href="#" class="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-indigo-600 hover:bg-gray-100">Log in</a>
+          </div>
+        </div>
+      </div>
+      <main class="mx-auto mt-16 max-w-7xl px-4 sm:mt-24">
+        <div class="text-center">
+          <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+            <span class="block xl:inline">Data to enrich your</span>
+            <span class="block text-indigo-600 xl:inline">online business</span>
+          </h1>
+          <p class="mx-auto mt-3 max-w-md text-base text-plightBlack sm:text-lg md:mt-5 md:max-w-3xl md:text-xl">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+          <div class="mx-auto mt-5 max-w-md sm:flex sm:justify-center md:mt-8">
+            <div class="rounded-md shadow">
+              <a href="#" class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg">Get started</a>
+            </div>
+            <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+              <a href="#" class="flex w-full items-center justify-center rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50 md:py-4 md:px-10 md:text-lg">Live demo</a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <!-- Block of all skills -->
+  <div class="container mx-auto lg:px-12 py-12">
+    <div class="grid gap-4 lg:grid-cols-3 md:grid-cols-1">
+      <div class="px-8 py-8 border-black rounded-2xl bg-blackcardlight shadow-md hover:shadow-lg cursor-pointer">
+        <div class="grid grid-cols-1">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 p-2 bg-blacklight rounded-full text-white border-2 border-indigo-500">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+            </svg>
+          </div>
+          <div class="mt-4">
+            <h3 class="text-white text-2xl mb-1">Read & Windows</h3>
+            <p class="text-plightBlack">Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Fugiat eaque ratione odio recusandae quaerat numquam.</p>
+          </div>
+        </div>
+      </div>
+      <div class="px-8 py-8 border-black rounded-2xl bg-blackcardlight shadow-md hover:shadow-lg cursor-pointer">
+        <div class="grid grid-cols-1">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 p-2 bg-blacklight rounded-full text-white border-2 border-indigo-500">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
+            </svg>
+          </div>
+          <div class="mt-4">
+            <h3 class="text-white text-2xl mb-1">Read & Windows</h3>
+            <p class="text-plightBlack">Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Fugiat eaque ratione odio recusandae quaerat numquam.</p>
+          </div>
+        </div>
+      </div>
+      <div class="px-8 py-8 border-black rounded-2xl bg-blackcardlight shadow-md hover:shadow-lg cursor-pointer">
+        <div class="grid grid-cols-1">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 p-2 bg-blacklight rounded-full text-white border-2 border-indigo-500">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+            </svg>
+          </div>
+          <div class="mt-4">
+            <h3 class="text-white text-2xl mb-1">Read & Windows</h3>
+            <p class="text-plightBlack">Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Fugiat eaque ratione odio recusandae quaerat numquam.</p>
+          </div>
+        </div>
+      </div>
+      <div class="px-8 py-8 border-black rounded-2xl bg-blackcardlight shadow-md hover:shadow-lg cursor-pointer">
+        <div class="grid grid-cols-1">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 p-2 bg-blacklight rounded-full text-white border-2 border-indigo-500">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3" />
+            </svg>
+          </div>
+          <div class="mt-4">
+            <h3 class="text-white text-2xl mb-1">Read & Windows</h3>
+            <p class="text-plightBlack">Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Fugiat eaque ratione odio recusandae quaerat numquam.</p>
+          </div>
+        </div>
+      </div>
+      <div class="px-8 py-8 border-black rounded-2xl bg-blackcardlight shadow-md hover:shadow-lg cursor-pointer">
+        <div class="grid grid-cols-1">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 p-2 bg-blacklight rounded-full text-white border-2 border-indigo-500">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+            </svg>
+          </div>
+          <div class="mt-4">
+            <h3 class="text-white text-2xl mb-1">Read & Windows</h3>
+            <p class="text-plightBlack">Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Fugiat eaque ratione odio recusandae quaerat numquam.</p>
+          </div>
+        </div>
+      </div>
+      <div class="px-8 py-8 border-black rounded-2xl bg-blackcardlight shadow-md hover:shadow-lg cursor-pointer">
+        <div class="grid grid-cols-1">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 p-2 bg-blacklight rounded-full text-white border-2 border-indigo-500">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+            </svg>
+          </div>
+          <div class="mt-4">
+            <h3 class="text-white text-2xl mb-1">Read & Windows</h3>
+            <p class="text-plightBlack">Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Fugiat eaque ratione odio recusandae quaerat numquam.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- All parteners -->
+  <div class="container mx-auto lg:px-12 py-12">
+    <div class="bg-blackcardlight border-black rounded-lg px-4 py-4">
+      <div class="grid lg:grid-cols-3 md:grid-cols-1">
+        <div class="relative h-[180px]">
+          <img src="https://placeholder.com/150" class="h-full w-full hover:bg-white">
+        </div>
+        <div class="relative h-[180px]">
+          <img src="https://placeholder.com/150" class="h-full w-full hover:bg-white">
+        </div>
+        <div class="relative h-[180px]">
+          <img src="https://placeholder.com/150" class="h-full w-full hover:bg-white">
+        </div>
+      </div>
+      <div class="grid lg:grid-cols-5 md:grid-cols-1">
+        <div class="relative h-[150px]">
+          <img src="https://placeholder.com/150" class="h-full w-full hover:bg-white">
+        </div>
+        <div class="relative h-[150px]">
+          <img src="https://placeholder.com/150" class="h-full w-full hover:bg-white">
+        </div>
+        <div class="relative h-[150px]">
+          <img src="https://placeholder.com/150" class="h-full w-full hover:bg-white">
+        </div>
+        <div class="relative h-[150px]">
+          <img src="https://placeholder.com/150" class="h-full w-full hover:bg-white">
+        </div>
+        <div class="relative h-[150px]">
+          <img src="https://placeholder.com/150" class="h-full w-full hover:bg-white">
+        </div>
+        <div class="relative h-[150px]">
+          <img src="https://placeholder.com/150" class="h-full w-full hover:bg-white">
+        </div>
+        <div class="relative h-[150px]">
+          <img src="https://placeholder.com/150" class="h-full w-full hover:bg-white">
+        </div>
+        <div class="relative h-[150px]">
+          <img src="https://placeholder.com/150" class="h-full w-full hover:bg-white">
+        </div>
+        <div class="relative h-[150px]">
+          <img src="https://placeholder.com/150" class="h-full w-full hover:bg-white">
+        </div>
+        <div class="relative h-[150px]">
+          <img src="https://placeholder.com/150" class="h-full w-full hover:bg-white">
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 <script src='./dist/main.ab0d1aad47ae74aa8ebb.js'></script>
 
