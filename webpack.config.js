@@ -1,23 +1,30 @@
+// https://webpack.js.org/loaders/postcss-loader/#root
+// https://stackoverflow.com/questions/71039049/use-tailwind-with-webpack-5
+const isProductionMode = process.env.NODE_ENV === "production";
+
 const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 
 var config = {
-  watch: true,
   mode: 'development',
-  entry: './src/index.ts',
+  entry: {
+    index: './src/scripts/index.ts',
+  },
   output: {
-    filename: '[name].[fullhash].js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
   module: {
     rules: [{
-        test: /\.s[ac]ss$/i,
+        test: /\.(sa|sc|c)ss$/,
+        include: path.resolve(__dirname, "src"),
         use: [
           "style-loader",
           "css-loader",
+          "postcss-loader",
           {
             loader: "sass-loader",
             options: {
@@ -57,15 +64,15 @@ var config = {
     ignored: '**/node_modules',
   },
   optimization: {
-    chunkIds: false,
-    removeEmptyChunks: false,
-    mergeDuplicateChunks: false,
+    splitChunks: {
+      chunks: 'all',
+    },
     emitOnErrors: false,
   },
   performance: {
-    hints: 'error',
-    maxAssetSize: 100000,
-    maxEntrypointSize: 400000,
+    hints: false,
+    maxAssetSize: 5120000,
+    maxEntrypointSize: 5120000,
   },
   plugins: [
     new MiniCssExtractPlugin({
@@ -80,8 +87,8 @@ var config = {
       '.js'
     ],
     alias: {
+      Source: path.resolve(__dirname, 'src/'),
       Utilities: path.resolve(__dirname, 'src/utilities/'),
-      Templates: path.resolve(__dirname, 'src/templates/'),
     },
   },
 };
