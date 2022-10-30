@@ -1,3 +1,5 @@
+import "Source/styles/index.css";
+
 interface User {
   id: number
   firstName: string
